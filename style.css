@@ -96,6 +96,7 @@ body {
     max-width: 1250px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
 }
 
 h1 {
@@ -104,6 +105,11 @@ h1 {
     margin-bottom: 10px;
 }
 
+h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
 /* Common styles */
 
 
@@ -162,7 +168,7 @@ h1 {
     align-items: center;
 }
 
-.into-img__img {
+.intro-img__img {
     max-width: 200px;
     height: auto;
     margin-right: 3rem;
@@ -190,8 +196,63 @@ h1 {
 
 /* Contacts */
 
+.contacts-subtitle__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts-subtitle__wrapper * {
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+.contacts-subtitle__vk {
+    background-image: url(/assets/icons/vk.svg);
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 48px;
+}
+
+.contacts-subtitle__tg {
+    background-image: url(/assets/icons/tg.svg);
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 48px;
+}
+
+.contacts-subtitle__gh {
+    background-image: url(/assets/icons/gh.svg);
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+}
+
+.contacts-subtitle__ds-icon {
+    background-image: url(/assets/icons/ds.svg);
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 48px;
+    margin-right: 8px;
+}
+
+.contacts-subtitle__phone-icon {
+    background-image: url(/assets/icons/phone.svg);
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+.contacts::after {
+    content:'';
+    display: block;
+    height: 5px;
+    border-radius: 3px;
+    background-color: #7eb5d4;
+    margin-top: 20px;
+}
+
 
 /* Contacts */
-
-
 
