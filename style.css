@@ -354,8 +354,30 @@ h2 {
 
 .footer-wrap {
     display: flex;
-    background-color: #3a769e;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #7eb5d4;
     height: 60px;
+}
+
+.footer__gh {
+    background-image: url(/assets/icons/gh.svg);
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+}
+
+.footer-subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #3a769e;
+}
+
+.footer__rs {
+    background-image: url(/assets/icons/rs_school_js.svg);
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 20px;
 }
 
 /* Footer */
