@@ -208,28 +208,28 @@ h2 {
 }
 
 .contacts-subtitle__vk {
-    background-image: url(assets/icons/vk.svg);
+    background-image: url('assets/icons/vk.svg');
     background-repeat: no-repeat;
     width: 48px;
     height: 48px;
 }
 
 .contacts-subtitle__tg {
-    background-image: url(assets/icons/tg.svg);
+    background-image: url('assets/icons/tg.svg');
     background-repeat: no-repeat;
     width: 48px;
     height: 48px;
 }
 
 .contacts-subtitle__gh {
-    background-image: url(assets/icons/gh.svg);
+    background-image: url('assets/icons/gh.svg');
     background-repeat: no-repeat;
     width: 40px;
     height: 40px;
 }
 
 .contacts-subtitle__ds-icon {
-    background-image: url(assets/icons/ds.svg);
+    background-image: url('assets/icons/ds.svg');
     background-repeat: no-repeat;
     width: 48px;
     height: 48px;
@@ -237,7 +237,7 @@ h2 {
 }
 
 .contacts-subtitle__phone-icon {
-    background-image: url(assets/icons/phone.svg);
+    background-image: url('assets/icons/phone.svg');
     background-repeat: no-repeat;
     width: 35px;
     height: 35px;
@@ -361,7 +361,7 @@ h2 {
 }
 
 .footer__gh {
-    background-image: url(assets/icons/gh.svg);
+    background-image: url('assets/icons/gh.svg');
     background-repeat: no-repeat;
     width: 40px;
     height: 40px;
@@ -374,7 +374,7 @@ h2 {
 }
 
 .footer__rs {
-    background-image: url(assets/icons/rs_school_js.svg);
+    background-image: url('assets/icons/rs_school_js.svg');
     background-repeat: no-repeat;
     width: 60px;
     height: 20px;
