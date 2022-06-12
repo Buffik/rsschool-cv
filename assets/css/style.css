@@ -22,7 +22,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #F6F2F2
+    background-color: #333333
 }
 
 main {
@@ -35,29 +35,33 @@ main {
 
 /* Common styles */
 
-body {
-    font-family: 'Open Sans', sans-serif;
+html {
+    font-family: 'Poppins', sans-serif;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
 }
 
 
 .container {
-    max-width: 1250px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
 }
 
 h1 {
-    font-weight: 800;
-    font-size: 2rem;
+    font-weight: bold;
+    font-size: 3rem;
     margin-bottom: 10px;
 }
 
 h2 {
-    font-weight: 600;
-    font-size: 1.5rem;
+    font-weight: bold;
+    font-size: 2.5rem;
     margin-bottom: 10px;
 }
 /* Common styles */
@@ -67,8 +71,8 @@ h2 {
 /* Site-menu */
 
 .site-menu {
-    background-color: #7eb5d4;
-    margin-bottom: 40px;
+    background-color: #FF5A5F;
+
 }
 
 
@@ -78,20 +82,16 @@ h2 {
     justify-content: center;
 }
 
-.site-menu__row li{
-    margin-right: 20px;
-}
+
 
 .site-menu__row li a {
     display: inline-flex;
     align-items: center;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    height: 70px;
+    padding: 1.5rem;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
-    color: #000000;
+    color: #FFFFFF;
 }
 
 .site-menu__row li a:hover {
