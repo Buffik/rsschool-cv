@@ -55,7 +55,7 @@ body {
 
 h1 {
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 10px;
 }
 
@@ -72,7 +72,6 @@ h2 {
 
 .site-menu {
     background-color: #FF5A5F;
-
 }
 
 
@@ -80,6 +79,10 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.site-menu__row li {
+    z-index: 10;
 }
 
 
@@ -95,7 +98,8 @@ h2 {
 }
 
 .site-menu__row li a:hover {
-    background-color: #3a769e;
+    color: #FF5A5F;
+    background-color: #333333;
     transition: 0.4s;
 }
 
@@ -105,41 +109,71 @@ h2 {
 
 /* Intro */
 
-.intro-wrapper {
+.intro {
+    position: relative;
+    top: 270px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 2rem;
 }
 
-.intro-name {
+.outer-circle, .middle-circle, .inner-circle {
+    position: absolute;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0) 45.83%, rgba(255, 255, 255, 0.44) 100%);
+    mix-blend-mode: normal;
+    opacity: 0.4;
+}
+
+.outer-circle {
+    z-index: 5;
+    border-radius: 50%;
+    width: 900px;
+    height: 900px;
+}
+
+.middle-circle {
+    z-index: 6;
+    border-radius: 50%;
+    width: 750px;
+    height: 750px;
+}
+
+.inner-circle {
+    z-index: 7;
+    border-radius: 50%;
+    width: 600px;
+    height: 600px;
+}
+
+.intro-info {
+    z-index: 8;
+    top: -245px;
+    position: absolute;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
-.intro-img__img {
-    max-width: 200px;
-    height: auto;
-    margin-right: 3rem;
-    border-radius: 50px;
+.intro-img {
+    padding-top: 20px;
+    margin-bottom: 20px;
 }
 
-.intro-name__title::after {
-    content:'';
-    display: block;
-    height: 3px;
-    border-radius: 3px;
-    background-color: #3a769e;
+.intro-name {
+    color: #FF5A5F;
 }
 
-.intro::after {
-    content:'';
-    display: block;
-    height: 5px;
-    border-radius: 3px;
-    background-color: #7eb5d4;
+.intro-profession {
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #FF5A5F;
+    color: #333333;
+    padding: 1.5rem;
+    border-radius: 1rem;
 }
+
+
 
 /* Intro */
 
