@@ -274,6 +274,9 @@ p {
 
 /* Projects */
 
+.projects-list > li {
+    margin-bottom: 15px;
+}
 
 /* Projects */
 
