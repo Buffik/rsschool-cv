@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
 <body>
@@ -26,102 +27,173 @@
     <main>
         <div class="container">
             <section class="intro">
-                <div class="intro-wrapper">
-                    <div class="intro-img">
-                        <img class="intro-img__img" src="assets/img/index.jpg" alt="My photo">
-                    </div>
-                    <div class="intro-name">
-                        <h1 class="intro-name__title">Vladimir Bufenko</h1>
-                        <p class="intro-name__subtitle">Junior front-end Developer</p>
-                    </div>
+                <span class="outer-circle"></span>
+                <span class="middle-circle"></span>
+                <span class="inner-circle"></span>
+                <div class="intro-info">
+                    <img class="intro-img" src="assets/img/my_photo.png" alt="My photo">
+                    <h1 class="intro-name">Vladimir Bufenko</h1>
+                    <p class="intro-profession">Junior front-end Developer</p>
                 </div>
             </section>
         </div>
-
         <div class="container">
-            <section class="contacts" id="contacts">
-                <h2 class="contacts-title">
-                    Contacts
-                </h2>
-                <div class="contacts-subtitle__wrapper">
-                    <a href="https://vk.com/id424876960" class="contacts-subtitle__vk"></a>
-                    <a href="https://t.me/biffik_1989" class="contacts-subtitle__tg"></a>
-                    <a href="https://github.com/Buffik" class="contacts-subtitle__gh"></a>
+            <div class="main-wrapper">
+                <div class="column-1">
+                    <section class="summary" id="summary">
+                        <h2 class="summary-title">Summary</h2>
+                        <p class="summary-subtitle">
+                            Hello! I am a 33 year old junior front end developer. Throughout my career, I have been selling various kinds of souvenir products for companies. At the end of 2021, I discovered the amazing world of web development. I realized that this is what I want to devote the rest of my life. I really enjoy learning programming, discovering new technologies and constantly improving my code. I finally found a profession for myself that allows me to get up every day in the morning in anticipation of gaining new knowledge, implementing this knowledge and, finally, the opportunity to fundamentally change my life.</p>
+                    </section>
+                    <section class="contacts" id="contacts">
+                        <h2 class="contacts-title">
+                            Contacts
+                        </h2>
+                        <ul class="contacts-row">
+                            <li class="contacts-block">
+                                <div class="contacts-img img-gh"></div>
+                                <div class="contacts-text">
+                                    <a href="https://github.com/Buffik">github.com/Buffik</a>
+                                </div>
+                            </li>
+                            <li class="contacts-block">
+                                <div class="contacts-img img-vk"></div>
+                                <div class="contacts-text">
+                                    <a href="https://vk.com/id424876960">vk.com</a>
+                                </div>
+                            </li>
+                            <li class="contacts-block">
+                                <div class="contacts-img img-tg"></div>
+                                <div class="contacts-text">
+                                    <a href="https://t.me/buffik_1989">t.me/buffik_1989</a>
+                                </div>
+                            </li>
+                            <li class="contacts-block">
+                                <div class="contacts-img img-email"></div>
+                                <div class="contacts-text">
+                                    <a href="mailto:som16@mail.ru">som16@mail.ru</a>
+                                </div>
+                            </li>
+                            <li class="contacts-block">
+                                <div class="contacts-img img-ds"></div>
+                                <div class="contacts-text">
+                                    <p>Vladimir (Buffik)#2460</p>
+                                </div>
+                            </li>
+                            <li class="contacts-block">
+                                <div class="contacts-img img-map"></div>
+                                <div class="contacts-text">
+                                    <a href="https://www.google.ru/maps/@59.8627942,30.4935617,18.54z">Saint-Petersburg, Russia</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="projects" id="projects">
+                        <h2 class="projects-title">Projects</h2>
+                        <ul class="projects-list">
+                            <li><a href="https://buffik.github.io/A3/">Home work from SkillFactory</a></li>
+                            <li><a href="https://buffik.github.io/cssMemSlider/">CSS Mem Slider</a></li>
+                            <li><a href="https://rolling-scopes-school.github.io/buffik-JSFE2022Q1/shelter/assets/pages/main/index.html">Project "Shelter"</a></li>
+                        </ul>
+                    </section>
                 </div>
-                <div class="contacts-subtitle__wrapper">
-                    <div class="contacts-subtitle__ds-icon"></div>
-                    <div class="contacts-subtitle__ds">Владимир (@Buffik)</div>
+                <div class="column-2">
+                    <section class="code" id="code">
+                        <h2 class="code-title">Code examples</h2>
+                        <div class="code-example"><pre><code>
+function createDreamTeam(members) {
+    let tmpArr = []
+    let result = ''
+    if (!Array.isArray(members)) {
+        return false
+    }
+    members.forEach((e) => {
+        if (typeof(e) === 'string') {
+        tmpArr.push(e.replace(/\s+/g, ''))
+        } 
+    })
+    
+    if (tmpArr.length === 0) {
+        return false
+    }
+    
+    for (let i = 0; i &lt; tmpArr.length; i++) {
+        result += tmpArr[i][0]
+    }
+    
+    return result.toUpperCase().split('').sort().join('')
+    }
+
+createDreamTeam(['Matt', 'Ann', 'Dmitry', 'Max']) => 'ADMM'
+createDreamTeam(['Olivia', 1111, 'Lily', 'Oscar', true, null]) => 'LOO'
+                            </code></pre>
+                        </div>
+                    </section>
+                    <section class="education" id="education">
+                        <h2 class="projects-title">Education</h2>
+                        <p>2006 - 2011. Kemerovo State University. The degree in International Relations / interpreter in professional communications</p>
+                    </section>
+                    <section class="english-skills" id="english-skills">
+                        <h2 class="projects-title">English-skills</h2>
+                        <p>I have a diploma of interpreter in professional communications, but have not been practice for a long time. I think my English is about pre-intermidiate level, but fast test resulted to be advanced. I have no problems to read and understand manuals or english articles, but speaking skills ought to be improved</p>
+                    </section>
+                    <section class="skills" id="skills">
+                        <h2 class="summary-title">Skills</h2>
+                        <ul class="skills-list">
+                            <li>
+                                <p>HTML</p>
+                                <div class="gradation-wrapper">
+                                    <span class="skills-gradation colored"></span>
+                                    <span class="skills-gradation colored"></span>
+                                    <span class="skills-gradation colored"></span>
+                                    <span class="skills-gradation colored"></span>
+                                    <span class="skills-gradation"></span>
+                                </div>
+                                
+                            </li>
+                            <li>
+                                <p>CSS / SASS (SCSS)</p>
+                                <div class="gradation-wrapper">
+                                    <span class="skills-gradation colored"></span>
+                                    <span class="skills-gradation colored"></span>
+                                    <span class="skills-gradation colored"></span>
+                                    <span class="skills-gradation colored"></span>
+                                    <span class="skills-gradation"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <p>JS</p>
+                                <div class="gradation-wrapper">
+                                    <span class="skills-gradation colored"></span>
+                                    <span class="skills-gradation colored"></span>
+                                    <span class="skills-gradation colored"></span>
+                                    <span class="skills-gradation"></span>
+                                    <span class="skills-gradation"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <p>Figma</p>
+                                <div class="gradation-wrapper">
+                                    <span class="skills-gradation colored"></span>
+                                    <span class="skills-gradation colored"></span>
+                                    <span class="skills-gradation colored"></span>
+                                    <span class="skills-gradation colored"></span>
+                                    <span class="skills-gradation colored"></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+        
                 </div>
-                <div class="contacts-subtitle__wrapper">
-                    <div class="contacts-subtitle__phone-icon"></div>
-                    <div class="contacts-subtitle__phone">+7-921-591-7184</div>
-                </div>
-            </section>
-        </div>
-
-        <div class="container">
-            <section class="summary" id="summary">
-                <h2 class="summary-title">Summary</h2>
-                <p class="summary-subtitle">
-                    I want to change my life and will make every effort for this.                </p>
-            </section>
-        </div>
-
-        <div class="container">
-            <section class="skills" id="skills">
-                <h2 class="summary-title">Skills</h2>
-                <ul class="skills-list">
-                    <li>HTML: beginner</li>
-                    <li>CSS: beginner</li>
-                    <li>JS: beginner</li>
-                    <li>Figma: beginner</li>
-                </ul>
-            </section>
-        </div>
-
-        <div class="container">
-            <section class="code" id="code">
-                <h2 class="code-title">Code examples</h2>
-                <div class="code-example">
-                    <pre><code>
-function summary(a,b) {
-    result = a * b;
-    return result;
-}
-                    </code></pre>
-                </div>
-            </section>
-        </div>
-
-        <div class="container">
-            <section class="projects" id="projects">
-                <h2 class="projects-title">Projects</h2>
-                <ul class="projects-list">
-                    <li><a href="https://buffik.github.io/A3/">Home work from SkillFactory</a></li>
-                </ul>
-            </section>
-        </div>
-
-        <div class="container">
-            <section class="education" id="education">
-                <h2 class="projects-title">Education</h2>
-                <p>I graduated from the University with a degree in International Relations in 2011</p>
-            </section>
-        </div>
-
-        <div class="container">
-            <section class="english-skills" id="english-skills">
-                <h2 class="projects-title">English-skills</h2>
-                <p>I have a diploma of interpreter in professional communications, but have not been practice for a long time. I think may English is about pre-intermidiate level, but fast test resulted to be advanced. I have no problems to read and understand manuals or english articles, but speaking skills ought to be improved</p>
-            </section>
+            </div>
         </div>
     </main>
     <footer>
-        <div class="container">
+        <div class="container container-footer">
             <div class="footer-wrap">
-                <a href="https://github.com/Buffik" class="footer__gh"></a>
+                <a href="https://github.com/Buffik" class="footer-gh-img" aria-label="GitHub"></a>
                 <p class="footer-subtitle">2022</p>
-                <a href="https://rs.school/js/" class="footer__rs"></a>
+                <a href="https://rs.school/js/" class="footer__rs" aria-label="RsSchool"></a>
             </div>
         </div>
     </footer>
