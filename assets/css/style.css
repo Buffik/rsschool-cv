@@ -53,6 +53,15 @@ body {
     margin-bottom: 20px;
 }
 
+a {
+    color: #FFFFFF;
+}
+
+a:hover {
+    color: #FF5A5F;
+    transition: 0.3s;
+}
+
 h1 {
     font-weight: bold;
     font-size: 4rem;
@@ -199,7 +208,13 @@ p {
 
 /* Intro */
 
+
+
 /* Summary */
+
+.summary {
+    margin-bottom: 30px;
+}
 
 .summary-subtitle {
     max-width: 400px;
@@ -208,7 +223,51 @@ p {
 /* Summary */
 
 
+
 /* Contacts */
+
+.contacts-row {
+    margin-bottom: 30px;
+}
+
+.contacts-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contacts-img {
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.img-gh {
+    background-image: url(../icons/github.svg);
+}
+
+.img-vk {
+    background-image: url(../icons/vk.svg);
+}
+
+.img-tg {
+    background-image: url(../icons/tg.svg);
+}
+
+.img-email {
+    background-image: url(../icons/email.svg);
+}
+
+.img-ds {
+    background-image: url(../icons/ds.svg);
+}
+
+.img-map {
+    background-image: url(../icons/map.svg);
+}
 
 
 /* Contacts */
