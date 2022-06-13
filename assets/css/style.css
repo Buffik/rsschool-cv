@@ -291,6 +291,15 @@ p {
     margin-bottom: 30px;
 }
 
+.code::after {
+    content:'';
+    display: block;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #FF5A5F;
+    margin-top: 20px;
+}
+
 .code-example {
     color: #FFFFFF;
 }
@@ -305,6 +314,15 @@ p {
     margin-bottom: 30px;
 }
 
+.education::after {
+    content:'';
+    display: block;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #FF5A5F;
+    margin-top: 20px;
+}
+
 /* Education */
 
 
@@ -313,6 +331,15 @@ p {
 
 .english-skills {
     margin-bottom: 30px;
+}
+
+.english-skills::after {
+    content:'';
+    display: block;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #FF5A5F;
+    margin-top: 20px;
 }
 
 /* English-skills */
