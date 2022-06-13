@@ -53,6 +53,7 @@ body {
     margin-bottom: 20px;
 }
 
+
 a {
     color: #FFFFFF;
 }
@@ -286,71 +287,104 @@ p {
 
 /* Code */
 
+.code {
+    margin-bottom: 30px;
+}
+
 .code-example {
     color: #FFFFFF;
-    margin-bottom: 30px;
 }
 
 /* Code */
 
-/* Education */
 
 
 /* Education */
 
-/* English-skills */
+.education {
+    margin-bottom: 30px;
+}
+
+/* Education */
 
 
+
 /* English-skills */
+
+.english-skills {
+    margin-bottom: 30px;
+}
+
+/* English-skills */
+
 
 
 /* Skills */
 
+.skills-list > li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
 
+.gradation-wrapper {
+    display: flex;
+    padding-right: 50px;
+}
+
+.skills-gradation {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #C4C4C4;
+    margin-right: 20px;
+}
+
+.colored {
+    background-color: #FF5A5F;
+}
 
 /* Skills */
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 /* Footer */
 
+.container-footer {
+    margin-bottom: 0;
+}
+
 .footer-wrap {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #7eb5d4;
+    background-color: #FF5A5F;
     height: 60px;
 }
 
-.footer__gh {
-    background-image: url('assets/icons/gh.svg');
+.footer-gh-img {
+    background-image: url(../icons/github_footer.svg);
+    background-position: center center;
     background-repeat: no-repeat;
+    background-size: cover;
     width: 40px;
     height: 40px;
 }
 
 .footer-subtitle {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #3a769e;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FFFFFF;
 }
 
 .footer__rs {
-    background-image: url('assets/icons/rs_school_js.svg');
+    background-image: url(../icons/rs_school_js.svg);
+    background-position: center left;
     background-repeat: no-repeat;
-    width: 60px;
-    height: 20px;
+    background-size: cover;
+    width: 110px;
+    height: 40px;
 }
 
 /* Footer */
