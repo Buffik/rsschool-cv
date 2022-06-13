@@ -100,13 +100,33 @@
                 <div class="column-2">
                     <section class="code" id="code">
                         <h2 class="code-title">Code examples</h2>
-                        <div class="code-example">
-                            <pre><code>
-    function summary(a,b) {
-        result = a * b;
-        return result;
+                        <div class="code-example"><pre><code>
+function createDreamTeam(members) {
+    let tmpArr = []
+    let result = ''
+    if (!Array.isArray(members)) {
+        return false
     }
-                            </code></pre>
+    members.forEach((e) => {
+        if (typeof(e) === 'string') {
+        tmpArr.push(e.replace(/\s+/g, ''))
+        } 
+    })
+    
+    if (tmpArr.length === 0) {
+        return false
+    }
+    
+    for (let i = 0; i < tmpArr.length; i++) {
+        result += tmpArr[i][0]
+    }
+    
+    return result.toUpperCase().split('').sort().join('')
+    }
+
+createDreamTeam(['Matt', 'Ann', 'Dmitry', 'Max']) => 'ADMM'
+createDreamTeam(['Olivia', 1111, 'Lily', 'Oscar', true, null]) => 'LOO'
+</code></pre>
                         </div>
                     </section>
                     <section class="education" id="education">
