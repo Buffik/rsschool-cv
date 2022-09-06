@@ -107,25 +107,21 @@ function createDreamTeam(members) {
     if (!Array.isArray(members)) {
         return false
     }
-    members.forEach((e) => {
+    members.forEach((e) =&gt; {
         if (typeof(e) === 'string') {
         tmpArr.push(e.replace(/\s+/g, ''))
-        } 
+        }
     })
-    
     if (tmpArr.length === 0) {
         return false
     }
-    
     for (let i = 0; i &lt; tmpArr.length; i++) {
         result += tmpArr[i][0]
     }
-    
     return result.toUpperCase().split('').sort().join('')
     }
-
-createDreamTeam(['Matt', 'Ann', 'Dmitry', 'Max']) => 'ADMM'
-createDreamTeam(['Olivia', 1111, 'Lily', 'Oscar', true, null]) => 'LOO'
+createDreamTeam(['Matt', 'Ann', 'Dmitry', 'Max']) =&gt; 'ADMM'
+createDreamTeam(['Olivia', 1111, 'Lily', 'Oscar', true, null]) =&gt; 'LOO'
                             </code></pre>
                         </div>
                     </section>
@@ -149,7 +145,6 @@ createDreamTeam(['Olivia', 1111, 'Lily', 'Oscar', true, null]) => 'LOO'
                                     <span class="skills-gradation colored"></span>
                                     <span class="skills-gradation"></span>
                                 </div>
-                                
                             </li>
                             <li>
                                 <p>CSS / SASS (SCSS)</p>
@@ -183,7 +178,6 @@ createDreamTeam(['Olivia', 1111, 'Lily', 'Oscar', true, null]) => 'LOO'
                             </li>
                         </ul>
                     </section>
-        
                 </div>
             </div>
         </div>
